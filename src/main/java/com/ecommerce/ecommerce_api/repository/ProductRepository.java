@@ -12,8 +12,9 @@ public interface ProductRepository extends JpaRepository<Product, Long> {
     List<Product> findByCategoryId(@Param("categoryId") Long categoryId);
 
     List<Product> findByStockLessThan(int stock);
-    List<Product> findByBrand(String brand);
 
+    @Query("SELECT p FROM Product p WHERE p.brand.id = :brandId")
+    List<Product> findByBrand_Id(@Param("brandId") Long brandId);
 
     @Query("SELECT p FROM Product p WHERE LOWER(TRIM(p.title)) LIKE LOWER(CONCAT('%', TRIM(:title), '%'))")
     List<Product> findByTitleContainingIgnoreCase(@Param("title") String title);

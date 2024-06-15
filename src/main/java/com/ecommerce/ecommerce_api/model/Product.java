@@ -22,13 +22,16 @@ public class Product {
     private String description;
     private double price;
     private int stock;
-    private String brand;
     private String image;
 
-    @ManyToMany(mappedBy = "products")
-    private List<Sale> sales;
+    @ManyToOne
+    @JoinColumn(name = "brand_id")
+    private Brand brand;
 
     @ManyToOne
     @JoinColumn(name = "category_id")
     private Category category;
+
+    @ManyToMany(mappedBy = "products")
+    private List<Sale> sales;
 }

@@ -6,7 +6,6 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.time.LocalDate;
 import java.util.List;
 
 @Data
@@ -14,20 +13,14 @@ import java.util.List;
 @AllArgsConstructor
 @Builder
 @Entity
-@Table(name="sales")
-public class Sale {
+@Table(name="brands")
+public class Brand {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private double total_price;
-    private int total_products;
-    private LocalDate date;
-    private Long customerId;
+    private String name;
+    private String description;
 
-    @ManyToMany
-    @JoinTable(
-            name = "sales_products",
-            joinColumns = @JoinColumn(name = "sale_id"),
-            inverseJoinColumns = @JoinColumn(name = "product_id"))
+    @OneToMany(mappedBy = "brand")
     private List<Product> products;
 }

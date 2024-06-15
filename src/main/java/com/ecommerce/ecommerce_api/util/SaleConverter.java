@@ -14,9 +14,7 @@ public class SaleConverter {
                 .totalProducts(sale.getTotal_products())
                 .date(sale.getDate())
                 .customerId(sale.getCustomerId())
-                .products(sale.getProducts().stream()
-                        .map(ProductConverter::toDTO)
-                        .collect(Collectors.toList()))
+                .products(ProductConverter.toDTOList(sale.getProducts()))
                 .build();
     }
 
@@ -27,9 +25,7 @@ public class SaleConverter {
                 .total_products(saleDTO.getTotalProducts())
                 .date(saleDTO.getDate())
                 .customerId(saleDTO.getCustomerId())
-                .products(saleDTO.getProducts().stream()
-                        .map(ProductConverter::toEntity)
-                        .collect(Collectors.toList()))
+                .products(ProductConverter.toEntityList(saleDTO.getProducts()))
                 .build();
     }
 

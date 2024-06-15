@@ -25,8 +25,8 @@ public class ProductService {
         return ProductConverter.toDTOList(productRepository.findByStockLessThan(5));
     }
 
-    public List<ProductDTO> getProductsByBrand(String brand) {
-        return ProductConverter.toDTOList(productRepository.findByBrand(brand));
+    public List<ProductDTO> getProductsByBrand(Long brandId) {
+        return ProductConverter.toDTOList(productRepository.findByBrand_Id(brandId));
     }
 
     public List<ProductDTO> getProductsByName(String name) {

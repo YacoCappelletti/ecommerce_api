@@ -14,7 +14,7 @@ public class ProductConverter {
                 .description(product.getDescription())
                 .price(product.getPrice())
                 .stock(product.getStock())
-                .brand(product.getBrand())
+                .brand(BrandConverter.toDTO(product.getBrand()))  // Actualiza esto
                 .image(product.getImage())
                 .category(CategoryConverter.toDTO(product.getCategory()))
                 .build();
@@ -27,7 +27,7 @@ public class ProductConverter {
                 .description(productDTO.getDescription())
                 .price(productDTO.getPrice())
                 .stock(productDTO.getStock())
-                .brand(productDTO.getBrand())
+                .brand(BrandConverter.toEntity(productDTO.getBrand()))
                 .image(productDTO.getImage())
                 .category(CategoryConverter.toEntity(productDTO.getCategory()))
                 .build();
