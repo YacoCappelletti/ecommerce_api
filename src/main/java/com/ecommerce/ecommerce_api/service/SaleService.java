@@ -57,7 +57,7 @@ public class SaleService {
                                 product.getProduct_id(),
                                 product.getTitle(),
                                 product.getCategory().getName(),
-                                1, // Cada producto en una venta representa una unidad vendida
+                                1, 
                                 product.getPrice()
                         )))
                 .collect(Collectors.groupingBy(
