@@ -1,6 +1,6 @@
-# Simple Ecommerce API
+# Ecommerce API
 
-Simple Ecommerce API is an API developed with Spring Boot to manage an ecommerce platform. This API allows you to handle products, categories, brands, and sales, as well as generate sales reports in Excel format.
+Ecommerce API is an API developed with Spring Boot to manage an ecommerce platform. This API allows you to handle products, categories, brands, and sales, as well as generate sales reports in Excel format.
 
 ## Table of Contents
 
