@@ -1,23 +1,23 @@
-# Ecommerce Api
+# E-Commerce API
 
-Proyecto de práctica en Java con Spring Boot.
+Java Spring Boot practice project.
 
 ## 🛠️ Stack
 
 - Java + Spring Boot
-- Maven (con mvnw wrapper)
-- Spring JPA / Spring Security
+- Maven (with mvnw wrapper)
+- Spring JPA / Security
 
-## 🎯 Objetivo
+## 🎯 Learning Objectives
 
-Ecommerce Api — proyecto educativo para practicar:
+Practice fundamental Java development:
 
-- Arquitectura MVC con Spring Boot
-- Patrones Repository, Service, Controller
-- Inyección de dependencias
-- CRUD operations y testing
+- MVC architecture with Spring Boot
+- Repository, Service, Controller patterns
+- Dependency injection
+- CRUD operations and unit testing
 
-## ▶️ Cómo Ejecutar
+## ▶️ Run
 
 ```bash
 ./mvnw spring-boot:run
@@ -25,4 +25,4 @@ Ecommerce Api — proyecto educativo para practicar:
 
 ---
 
-> Proyecto educativo | **Yaco Cappelletti** 🇦🇷→🇪🇸
+> Educational project by Yaco Cappelletti
