@@ -1,28 +1,22 @@
 # E-Commerce API
 
-Java Spring Boot practice project.
+A RESTful e-commerce backend built with Spring Boot. Manages products, orders, and users through a clean layered architecture.
 
-## 🛠️ Stack
+## What's inside
+- Product catalog with CRUD operations
+- Shopping cart and order management endpoints
+- User authentication and authorization (Spring Security)
+- Repository pattern with JPA/Hibernate
+- Maven wrapper for reproducible builds
 
-- Java + Spring Boot
-- Maven (with mvnw wrapper)
-- Spring JPA / Security
+## 🛠️ Tech Stack
+Java 17+, Spring Boot, Spring JPA, Spring Security, Maven.
 
-## 🎯 Learning Objectives
-
-Practice fundamental Java development:
-
-- MVC architecture with Spring Boot
-- Repository, Service, Controller patterns
-- Dependency injection
-- CRUD operations and unit testing
-
-## ▶️ Run
-
+## ▶️ Running it locally
 ```bash
 ./mvnw spring-boot:run
 ```
 
 ---
 
-> Educational project by Yaco Cappelletti
+> Project by Yaco Cappelletti
